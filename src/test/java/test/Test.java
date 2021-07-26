@@ -16,9 +16,9 @@ import metier.Salon;
 public class Test {
 
 	public static void main(String[] args) {
-		Console c1 = new Salon("wii");
-		Console c2 = new Hybride("switch");
-		Console c3 = new Salon("gamecube");
+		Console c1 = new Salon("wii",200,LocalDate.parse("2004-11-15"));
+		Console c2 = new Hybride("switch",300,LocalDate.parse("2004-11-15"));
+		Console c3 = new Salon("gamecube",200,LocalDate.parse("2004-11-15"));
 		
 		List<Console> consoles = new ArrayList();
 		consoles.add(c1);

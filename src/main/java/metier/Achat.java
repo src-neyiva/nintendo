@@ -8,6 +8,8 @@ public class Achat {
 	private LocalDate date;
 	private int prix;
 	private Boutique boutique;
+	
+	
 	public Achat(Jeu jeu, LocalDate date, int prix, Boutique boutique) {
 		this.jeu = jeu;
 		this.date = date;
