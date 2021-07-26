@@ -6,10 +6,10 @@ public class Client {
 
 	private String nom;
 	private String prenom;
-	private List<Jeu> jeux;
+	private List<Achat> jeux;
 	
 	
-	public Client(String nom, String prenom, List<Jeu> jeux) {
+	public Client(String nom, String prenom, List<Achat> jeux) {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.jeux = jeux;
@@ -36,12 +36,12 @@ public class Client {
 	}
 
 
-	public List<Jeu> getJeux() {
+	public List<Achat> getJeux() {
 		return jeux;
 	}
 
 
-	public void setJeux(List<Jeu> jeux) {
+	public void setJeux(List<Achat> jeux) {
 		this.jeux = jeux;
 	}
 
