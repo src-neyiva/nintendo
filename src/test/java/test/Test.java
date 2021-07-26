@@ -16,12 +16,17 @@ public class Test {
 		Console c2 = new Console("switch");
 		Console c3 = new Console("gamecube");
 		
+		List<Console> consoles = new ArrayList();
+		consoles.add(c1);
+		consoles.add(c2);
+		consoles.add(c3);
 		
-		Jeu j1 = new Jeu("mario_galaxy",c1);
-		Jeu j2 = new Jeu("zelda twilight princess",c1);
-		Jeu j3 = new Jeu("pokemon unite",c2);
-		Jeu j4 = new Jeu("metroid prime 2",c3);
-		Jeu j5 = new Jeu("pokemon let's go evoli",c2);
+		
+		Jeu j1 = new Jeu("mario_galaxy",consoles);
+		Jeu j2 = new Jeu("zelda twilight princess",consoles);
+		Jeu j3 = new Jeu("pokemon unite",consoles);
+		Jeu j4 = new Jeu("metroid prime 2",consoles);
+		Jeu j5 = new Jeu("pokemon let's go evoli",consoles);
 		List<Jeu> jeuxBoutique = new ArrayList();
 		
 		List<Jeu> jeuxClient = new ArrayList();
