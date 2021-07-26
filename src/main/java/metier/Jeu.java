@@ -1,15 +1,16 @@
 package metier;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Jeu {
 
 	private String titre;
-	private Console console;
+	private List <Console> console= new ArrayList();
 	
 	
 	
-	public Jeu(String titre, Console console) {
+	public Jeu(String titre, List<Console> console) {
 		this.titre = titre;
 		this.console = console;
 	}
@@ -28,13 +29,13 @@ public class Jeu {
 
 
 
-	public Console getConsole() {
+	public List<Console> getConsole() {
 		return console;
 	}
 
 
 
-	public void setConsole(Console console) {
+	public void setConsole(List<Console> console) {
 		this.console = console;
 	}
 
