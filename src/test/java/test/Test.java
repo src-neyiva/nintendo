@@ -1,8 +1,10 @@
 package test;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import metier.Achat;
 import metier.Adresse;
 import metier.Boutique;
 import metier.Client;
@@ -31,7 +33,10 @@ public class Test {
 		Jeu j5 = new Jeu("pokemon let's go evoli",consoles);
 		List<Jeu> jeuxBoutique = new ArrayList();
 		
-		List<Jeu> jeuxClient = new ArrayList();
+		Adresse a = new Adresse(5, "Rue Saint-Rome", "Toulouse");
+		
+		Boutique b = new Boutique("EscrocMania", a, jeuxBoutique);
+		List<Achat> jeuxClient = new ArrayList();
 		
 		jeuxBoutique.add(j1);
 		jeuxBoutique.add(j2);
@@ -39,12 +44,14 @@ public class Test {
 		jeuxBoutique.add(j4);
 		jeuxBoutique.add(j5);
 		
-		jeuxClient.add(j3);
-		jeuxClient.add(j4);
+		Achat a1 = new Achat(j3, LocalDate.now(),50, b);
+		Achat a2 = new Achat(j4, LocalDate.now(),50, b);
 		
-		Adresse a = new Adresse(5, "Rue Saint-Rome", "Toulouse");
+		jeuxClient.add(a1);
+		jeuxClient.add(a2);
 		
-		Boutique b = new Boutique("EscrocMania", a, jeuxBoutique);
+		
+		
 		Client c = new Client("Courtades", "Andy", jeuxClient);
            
 	}
