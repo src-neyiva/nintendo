@@ -7,14 +7,16 @@ import metier.Adresse;
 import metier.Boutique;
 import metier.Client;
 import metier.Console;
+import metier.Hybride;
 import metier.Jeu;
+import metier.Salon;
 
 public class Test {
 
 	public static void main(String[] args) {
-		Console c1 = new Console("wii");
-		Console c2 = new Console("switch");
-		Console c3 = new Console("gamecube");
+		Console c1 = new Salon("wii");
+		Console c2 = new Hybride("switch");
+		Console c3 = new Salon("gamecube");
 		
 		List<Console> consoles = new ArrayList();
 		consoles.add(c1);
