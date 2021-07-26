@@ -1,8 +1,9 @@
 package metier;
 
+
 import java.time.LocalDate;
 
-public class Console {
+public abstract class Console {
 
 	private String nom;
     private int prix;
